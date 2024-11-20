@@ -1,0 +1,10 @@
+<header class="navbar__header">
+    <div class="navbar__content">   
+        <a href="#" class="navbar__logo_link"><img class="navbar__logo__img" src="assets/LOGO_IKOMI.png" alt="Logo" width="250"></a>
+        <nav class="navbar__links">
+            @for (link of links; track link.enlace) {
+                <a [href]="link.ref" [class.active]="activeLink === link.enlace" (click)="setActiveLink(link.enlace)"><i [class]="link.icon"></i> {{ link.enlace }}</a>
+            }            
+        </nav>
+    </div>    
+</header>

@@ -1,0 +1,30 @@
+#nosotros {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.nosotros__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 60px;
+    gap: 20px;
+}
+
+.nosotros__item {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.nosotros__area {
+    text-align: center;
+    padding: 10px 0;
+    background-color: gray;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 5px;
+}

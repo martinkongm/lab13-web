@@ -1,0 +1,26 @@
+<div id="producto" class="productos">
+  <h2>NUESTROS PRODUCTOS</h2>
+  <p>Los mejores productos y precios.</p>
+
+  <!-- Categorías -->
+  <div class="categorias">
+    @for(categoria of categorias; track categoria) {
+    <button
+      [class.activo]="categoria === categoriaSeleccionada"
+      (click)="seleccionarCategoria(categoria)"
+    >
+      {{ categoria }}
+    </button>
+    }
+  </div>
+
+  <!-- Lista de productos -->
+  <div class="productos-lista">
+    @for(producto of productosFiltrados; track producto) {
+    <div>
+      <img [src]="producto.imagen" [alt]="producto.nombre" />
+      <p>{{ producto.nombre }}</p>
+    </div>
+    }
+  </div>
+</div>

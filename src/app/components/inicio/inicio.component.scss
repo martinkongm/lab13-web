@@ -1,0 +1,33 @@
+$urlImg: '../../../assets/hero-bg.png';
+
+#inicio::before {
+    content: '';
+    background: black;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#inicio {
+    background-image: url($urlImg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.inicio__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: inherit;
+    color: white;
+    position: absolute;
+    width: 100%;
+    padding-right: 5rem;
+}

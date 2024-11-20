@@ -1,0 +1,14 @@
+<section id="marcas">
+    <h2 class="marcas__heading">Marcas</h2>
+    <h3 class="marcas__heading">Contamos con las marcas más reconocidas en el mercado nacional e internacional especializadas en la fabricación de repuestos para vehículos con altos estándares de calidad.</h3>
+    <div class="marcas__container--grid">
+        @for(marca of marcas; track marca.imagen) {
+            <div class="marca">
+                <div>
+                    <img class="marca__imagen" [src]="marca.imagen">
+                </div>
+                <p>{{ marca.descripcion }}</p>
+            </div>
+        }
+    </div>
+</section>

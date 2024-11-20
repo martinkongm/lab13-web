@@ -1,0 +1,11 @@
+<section id="nosotros">
+    <h1 class="nosotros__heading">Nosotros</h1>
+    <div class="nosotros__container">
+        @for(item of items; track item.area) {
+            <div class="nosotros__item">
+                <h3 class="nosotros__area">{{ item.area }}</h3>
+                <div><img [src]="item.image" width="350"></div>
+            </div>
+        }
+    </div>
+</section>

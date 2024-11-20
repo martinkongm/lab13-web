@@ -1,0 +1,39 @@
+.navbar__header {
+    background-color: rgba(17, 58, 194, 0.7);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    z-index: 9999;
+}
+
+.navbar__content {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo_link {
+    margin-right: 200px;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 2rem;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+
+.navbar__links > :hover {
+    color: #eece18;
+}
+
+.navbar__links > .active {
+    color: #ffd700;
+}

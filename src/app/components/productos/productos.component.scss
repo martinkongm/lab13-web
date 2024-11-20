@@ -1,0 +1,38 @@
+.productos {
+    text-align: center;
+    padding: 40px;
+}
+
+.categorias {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.activo {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.productos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.productos-lista div {
+    text-align: center;
+}
+
+.productos-lista img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
