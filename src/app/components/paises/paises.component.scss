@@ -1,0 +1,16 @@
+#paises {
+    text-align: center;
+    padding: 30px;
+}
+
+.paises__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 15px;
+    
+}
+
+li {
+    list-style-type: none;
+}

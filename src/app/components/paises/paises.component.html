@@ -1,0 +1,28 @@
+<section id="paises">
+    <h2>Países de compra rápido</h2>
+    <div class="paises__grid">
+        @for(pais of paisesData; track pais) {
+            <article class="pais">
+                <header class="pais__header">
+                    <h3 class="pais__nombre">{{ pais?.name?.common }}</h3>
+                    <h4 class="pais__capital">{{ pais?.capital }}</h4>
+                </header>
+                <div class="pais__img--container">
+                    <img class="pais__img" [src]="pais?.flags?.png" alt="">
+                </div>
+                <div class="pais__info">
+                    <p class="pais__idiomas">Idiomas</p>
+                    <ul>
+                        @for(language of pais?.languages | keyvalue ; track language) {
+                            <li class="idioma">{{ language?.value }}</li>
+                        }
+                    </ul>
+                    <p class="pais_moneda">Moneda</p>
+                    @for(currency of pais?.currencies | keyvalue; track currency) {
+                        <span class="moneda">{{ currency.value.symbol }} ({{ currency.value.name }})</span>
+                    }
+                </div>
+            </article>
+        }
+    </div>
+</section>

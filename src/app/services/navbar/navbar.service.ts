@@ -12,7 +12,8 @@ export class NavbarService {
     { enlace: "Servicios", icon: "bi bi-suitcase-lg-fill", ref: "#servicios" },
     { enlace: "Producto", icon: "bi bi-wrench-adjustable", ref: "#producto" },
     { enlace: "Marcas", icon: "bi bi-shield-fill", ref: "#marcas" },
-    { enlace: "Contáctanos", icon: "bi bi-file-earmark-person", ref: "#contacto" },
+    { enlace: "Países", icon: "bi bi-flag-fill", ref: "#paises" },
+    { enlace: "Pokemones", icon: "bi bi-bug-fill", ref: "#pokemones" },
   ];
 
   constructor() { }

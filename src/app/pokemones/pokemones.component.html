@@ -1,0 +1,37 @@
+<section id="pokemones" class="pokemon-container">
+  <h2>LLévate un pokemon</h2>
+    <div class="pokemon-grid">
+      @for(p of pokemonList; track p) {
+        <div class="pokemon-card">
+          <h2>{{ p.name | uppercase }}</h2>
+          <img [src]="p.sprite" [alt]="p.name" />
+    
+          <p><strong>Type:</strong> {{ p.types.join(', ') }}</p>
+          <p><strong>Abilities:</strong> {{ p.abilities.join(', ') }}</p>
+          <p><strong>Moves:</strong> {{ p.moves.join(', ') }}</p>
+          <p><strong>Weight:</strong> {{ p.weight }} kg</p>
+        </div>
+      } 
+    </div>
+  
+    <div class="search-section">
+      <input
+        type="text"
+        [(ngModel)]="pokemonName"
+        placeholder="Busca tu pokemon"
+      />
+      <button (click)="searchPokemon()">Buscar</button>
+    </div>
+  
+     @if(pokemon) {
+      <div class="pokemon-details">
+        <h2>{{ pokemon.name | uppercase }}</h2>
+        <img [src]="pokemon.sprite" [alt]="pokemon.name" />
+        <p><strong>Abilities:</strong> {{ pokemon.abilities.join(', ') }}</p>
+        <p><strong>Types:</strong> {{ pokemon.types.join(', ') }}</p>
+        <p><strong>Moves:</strong> {{ pokemon.moves.join(', ') }}</p>
+        <p><strong>Weight:</strong> {{ pokemon.weight }} kg</p>
+      </div>
+     }
+  </section>
+  
